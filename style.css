@@ -155,5 +155,71 @@ button:hover {
 #cart li {
     padding: 10px 0;
     border-bottom: 1px dashed #81C784;
+}
+/* =========================
+   صفحه ورود
+========================= */
+
+#login-page{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(255,255,255,0.95);
+
+    z-index:9999;
+}
+
+.login-box{
+
+    width:350px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.login-box input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:15px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    box-sizing:border-box;
+}
+
+.login-box button{
+
+    width:100%;
+}
+
+#error-message{
+
+    color:red;
+
+    margin-top:15px;
+
+    font-weight:bold;
+}
     font-size: 1.05em;
 }
