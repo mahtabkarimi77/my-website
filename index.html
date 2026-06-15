@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="login-page">
+    <div class="login-box">
+
+        <h2>ورود به سامانه گیاهان دارویی</h2>
+
+        <p>لطفاً کد دعوت خود را وارد کنید</p>
+
+        <input
+            type="text"
+            id="invite-code"
+            placeholder="کد دعوت">
+
+        <button onclick="login()">
+            ورود
+        </button>
+
+        <p id="error-message"></p>
+
+    </div>
+</div>
+
+<div id="main-content" style="display:none;">
     <header>
         <h1>طب سنتی ایرانی و گیاهان دارویی</h1>
         <nav>
@@ -116,7 +138,7 @@
             <p>مجموع: <span id="total">۰</span> تومان</p>
         </div>
     </section>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
