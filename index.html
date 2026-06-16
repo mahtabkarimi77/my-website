@@ -11,19 +11,32 @@
     <div class="login-box">
 
         <h2>ورود به سامانه گیاهان دارویی</h2>
+<p>شماره تماس خود را وارد کنید</p>
 
-        <p>لطفاً کد دعوت خود را وارد کنید</p>
+<input
+    type="text"
+    id="phone-number"
+    placeholder="09xxxxxxxxx">
 
-        <input
-            type="text"
-            id="invite-code"
-            placeholder="کد دعوت">
+<button onclick="sendCode()">
+    ارسال کد تایید
+</button>
 
-        <button onclick="login()">
-            ورود
-        </button>
+<div id="otp-section" style="display:none; margin-top:15px;">
 
-        <p id="error-message"></p>
+    <input
+        type="text"
+        id="otp-code"
+        placeholder="کد تایید">
+
+    <button onclick="verifyCode()">
+        تایید و ورود
+    </button>
+
+</div>
+
+<p id="error-message"></p>
+
 
     </div>
 </div>
@@ -34,7 +47,9 @@
         <nav>
             <ul>
                 <li><a href="#intro">معرفی و فروش گیاهان دارویی</a></li>
+                <li><a href="#guide">راهنمای استفاده</a></li>
                 
+
             </ul>
         </nav>
     </header>
@@ -97,7 +112,22 @@
         </div>
     </div>
 </section>
-    <section id="shop">
+
+<section id="guide">
+
+    <h2>راهنمای استفاده از سایت</h2>
+
+    <ol>
+        <li>ابتدا وارد سامانه شوید.</li>
+        <li>خواص گیاهان دارویی را مطالعه کنید.</li>
+        <li>محصول مورد نظر را به سبد خرید اضافه کنید.</li>
+        <li>در انتهای صفحه مجموع خرید را مشاهده نمایید.</li>
+    </ol>
+
+</section>
+
+<section id="shop">
+    
         <h2>فروش گیاهان دارویی</h2>
         <div class="product-carousel">
             <div class="product">
